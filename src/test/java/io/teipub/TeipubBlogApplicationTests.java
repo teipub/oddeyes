@@ -1,4 +1,4 @@
-package com.teipub;
+package io.teipub;
 
 import org.junit.Ignore;
 import org.junit.Test;

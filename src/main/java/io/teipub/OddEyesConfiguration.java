@@ -1,8 +1,6 @@
-package com.teipub;
+package io.teipub;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -11,5 +9,5 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableAutoConfiguration
-public class BlogConfiguration {
+public class OddEyesConfiguration {
 }

@@ -1,12 +1,12 @@
-package com.teipub;
+package io.teipub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TeipubBlogApplication {
+public class OddEyesBlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TeipubBlogApplication.class, args);
+		SpringApplication.run(OddEyesBlogApplication.class, args);
 	}
 }

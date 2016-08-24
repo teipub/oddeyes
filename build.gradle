@@ -38,14 +38,13 @@ configurations {
 	providedRuntime
 }
 
-
-
 dependencies {
 	compile('org.springframework.boot:spring-boot-devtools')
 //    compile('org.springframework.boot:spring-boot-starter-data-jpa')
 //	compile('org.springframework.boot:spring-boot-starter-jooq')
 	compile('org.projectlombok:lombok')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+    compile('com.vaadin:vaadin-spring-boot-starter:1.0.0')
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
