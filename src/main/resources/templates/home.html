@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Blog</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.1/require.min.js"></script>
 </head>
 <body>
-This is teipub blog!! <span th:text="${name}"></span>
+This is teipub blog!! <strong><span th:text="${name}"></span></strong>
+<script>
+    // set our baseURL reference path
+    SystemJS.config({
+        baseURL: '/ts'
+    });
+
+    // loads /js/main.js
+    SystemJS.import('/ts/Hello.js');
+</script>
 </body>
 </html>

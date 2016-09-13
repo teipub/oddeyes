@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "require": "^2.4.20",
+    "requirejs": "^2.3.1",
+    "systemjs": "^0.19.38",
+    "typescript": "1.8.7"
+  }
+}
