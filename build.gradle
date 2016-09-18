@@ -45,7 +45,7 @@ repositories {
 }
 
 bootRun {
-    addResources = true
+    addResources = false
 }
 
 configurations {
@@ -57,7 +57,7 @@ dependencies {
 //	compile('org.springframework.boot:spring-boot-starter-jooq')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-devtools')
+//    compile('org.springframework.boot:spring-boot-devtools')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile('org.projectlombok:lombok')
 
@@ -66,6 +66,7 @@ dependencies {
 }
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin'
+    main.resources.srcDirs += 'src/main/resources'
 }
 
 import com.moowork.gradle.node.NodeExtension

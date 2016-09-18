@@ -14,7 +14,7 @@ class HomeController {
     @RequestMapping("/")
     fun home(): ModelAndView {
         val mav = ModelAndView("home")
-        mav.addObject("name", "전경민")
+        mav.addObject("name", "teipub")
         return mav
     }
 }

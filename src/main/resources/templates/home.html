@@ -7,11 +7,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.1/require.min.js"></script>
 </head>
 <body>
-This is teipub blog!! <strong><span th:text="${name}"></span></strong>
+This is teipub.io blog!!! <strong><span th:text="${name}"></span></strong>
 <script>
-    // set our baseURL reference path
-    SystemJS.config({
-        baseURL: '/ts'
+    System.config({
+        transpiler: "ts",
+        packages: {
+            "src": {
+                "defaultExtension": "ts",
+                "meta": {
+                    "*.ts": {
+                        "loader": "ts"
+                    }
+                }
+            }
+        }
     });
 
     // loads /js/main.js
