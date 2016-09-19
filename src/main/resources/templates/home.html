@@ -1,30 +1,26 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-    <meta charset="UTF-8"/>
-    <title>Blog</title>
+    <title>Angular 2 QuickStart</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.1/require.min.js"></script>
-</head>
-<body>
-This is teipub.io blog!!! <strong><span th:text="${name}"></span></strong>
-<script>
-    System.config({
-        transpiler: "ts",
-        packages: {
-            "src": {
-                "defaultExtension": "ts",
-                "meta": {
-                    "*.ts": {
-                        "loader": "ts"
-                    }
-                }
-            }
-        }
-    });
 
-    // loads /js/main.js
-    SystemJS.import('/ts/Hello.js');
-</script>
+    <!-- 2. Configure SystemJS -->
+    <script src="/js/systemjs.config.js"></script>
+    <script>
+        System.import('ts/app/main.js').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body>
+<my-app>Loading...</my-app>
 </body>
 </html>

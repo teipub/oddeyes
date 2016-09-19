@@ -87,6 +87,5 @@ compileTypeScript {
 }
 
 compileTypeScript {
-    sourcemap = true
-    outputDir new File("$buildDir/resources/main/static/ts")
+    projectFile = new File("$projectDir/tsconfig.json")
 }
