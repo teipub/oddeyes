@@ -1,6 +1,8 @@
 {
-  "name": "angular2-quickstart",
+  "name": "teipub-oddeyes",
   "version": "1.0.0",
+  "description": "",
+  "repository": "",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
