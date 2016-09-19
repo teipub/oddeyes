@@ -4,10 +4,8 @@
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
-    "postinstall": "typings install",
     "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
+    "tsc:w": "tsc -w"
   },
   "license": "ISC",
   "dependencies": {
@@ -35,7 +33,6 @@
   "devDependencies": {
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.2",
-    "typescript": "^2.0.2",
-    "typings": "^1.3.2"
+    "typescript": "^2.0.2"
   }
 }
