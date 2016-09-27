@@ -1,8 +1,8 @@
 package teipub
 
 import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.servlet.ModelAndView
 
 /**
  * Created by tei on 2016-08-15.
@@ -10,11 +10,11 @@ import org.springframework.web.servlet.ModelAndView
  */
 @Controller
 class HomeController {
-
     @RequestMapping("/")
-    fun home(): ModelAndView {
-        val mav = ModelAndView("home")
-        mav.addObject("name", "teipub")
-        return mav
+    fun home(model: Model): String {
+        model.addAttribute("name", "teipub")
+        return "home"
     }
 }
+
+

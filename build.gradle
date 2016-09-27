@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.0.3'
+    ext.kotlin_version = '1.0.4'
     ext {
 		springBootVersion = '1.4.0.RELEASE'
 	}
@@ -55,8 +55,13 @@ configurations {
 dependencies {
 //    compile('org.springframework.boot:spring-boot-starter-data-jpa')
 //	compile('org.springframework.boot:spring-boot-starter-jooq')
-    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+//    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('pl.allegro.tech.boot:handlebars-spring-boot-starter:0.2.12')
+    compile 'com.github.jknack:handlebars-helpers:4.0.4',
+            'com.github.jknack:handlebars-jackson2:4.0.4',
+            'com.github.jknack:handlebars-humanize:4.0.4',
+            'com.github.jknack:handlebars-markdown:4.0.4'
 //    compile('org.springframework.boot:spring-boot-devtools')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile('org.projectlombok:lombok')
